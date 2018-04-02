@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JsOperatorsandExp</title>
+</head>
+<body>
+ <script>
+  
+  var temperatureInCelsius="40"; //Create a variable temperatureInCelsius and assign value 40
+  var celsiusToFahrenheit;
+
+  //Calculate Celsius to Fahrenheit conversion and store result in variablecelsiusToFahrenheit
+
+  function convertsCtoF(){
+    celsiusToFahrenheit=(temperatureInCelsius * 9) / 5 + 32;
+} 
+
+//Calculate Fahrenheit to Celsius conversion and store result in variablecelsiusToFahrenheit
+function convertsFtoC(){
+    temperatureInCelsius =((celsiusToFahrenheit - 32 )* 5)/9;
+} 
+
+convertsCtoF(); //invoking the first function, convertion of celsius to fahrenheit
+
+console.log("Temperature of" + " " + temperatureInCelsius +" "+ "celsius, will be" + " " +celsiusToFahrenheit+ " " +"fahrenheit"+"\n");
+
+convertsFtoC(); //invoking the Second function, convertion of fahrenheit to celsius
+console.log("Temperature of" + " " + celsiusToFahrenheit +" "+ "fahrenheit, will be" +" " + temperatureInCelsius + " " +"celsius");
+    
+</script>   
+</body>
+</html>
